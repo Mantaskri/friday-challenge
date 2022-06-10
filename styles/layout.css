@@ -1,0 +1,81 @@
+:root{
+    --header-color: #F7F6FF
+}
+body{
+    margin: 0px;
+}
+header {
+    display: inline-block;
+    width: 100px;
+    height: 100vh; 
+    background-color: var(--header-color);
+    transition: 0.3s;   
+}
+.header:hover{
+    width: 206px;
+}
+.header:hover .home{
+    display: inline-block;
+    opacity: 1;
+}
+.logo {
+    display: block;
+    width: 68px;
+    height: auto;
+    margin:58px auto 18px auto;
+}
+hr {
+    width: 50%;
+    height: 1px;
+    background-color:#C4C4C4;
+    border: 1px solid #C4C4C4;
+}
+.navi {
+    margin-top: 32px;
+}
+.home {
+    padding: 16px 32px;
+    border-radius: 300px 0 0 300px;
+    margin-left: 11px;
+    display: flex;
+    flex-direction: column;
+    /*position: relative;*/
+}
+.main-icon >.icon-link {
+    font-family: 'Courier New', Courier, monospace;
+    display: none;
+    text-decoration: none;
+    font-size: 16px;
+    color: #02577A;
+    font-weight: 600;
+    margin-left:15px;
+    opacity: 1;
+    bottom: 50%;
+    left:40%;
+    transform: translateX(-50%);
+    transform: translateY(50%);
+}
+.callendar {
+    padding: 16px 32px;
+    size: 25px 25px;
+}
+.plugins {
+    padding: 16px 32px;
+    size: 25px 25px;
+}
+.games {
+    padding: 16px 32px;
+    size: 40px 25px;
+}
+.main-icon:hover {
+background-color: #fff;
+}
+.icons{
+    display: inline-block;
+    height: 25px;
+    width: auto;
+    margin: 15px auto;
+}
+.header:hover .icon-link {
+    display: flex;
+}
