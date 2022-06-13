@@ -5,7 +5,8 @@ body{
     margin: 0px;
 }
 header {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: 100px;
     height: 100vh; 
     background-color: var(--header-color);
@@ -15,7 +16,7 @@ header {
     width: 206px;
 }
 .header:hover .home{
-    display: inline-block;
+    visibility: visible;
     opacity: 1;
 }
 .logo {
@@ -36,17 +37,12 @@ hr {
 .home {
     padding: 0 32px;
     border-radius: 300px 0 0 300px;
-    margin-left: 11px;
-    display: flex;
-   
-  
-    
-    
+    margin-left: 11px;   
 }
 .main-icon >.icon-link {
     font-family: 'Courier New', Courier, monospace;
-    display: none;
     text-decoration: none;
+    display: none;
     font-size: 16px;
     color: #02577A;
     font-weight: 600;
@@ -54,14 +50,13 @@ hr {
     opacity: 1;
     bottom: 50%;
     left:40%;
-    transform: translateX(-50%);
     transform: translateY(50%);
 }
-.callendar {
+.calendar {
     padding: 16px 32px;
     size: 25px 25px;
 }
-.plugins {
+.FE {
     padding: 16px 32px;
     size: 25px 25px;
 }
@@ -80,4 +75,5 @@ background-color: #fff;
 }
 .header:hover .icon-link {
     display: flex;
+    flex-direction: row;
 }
