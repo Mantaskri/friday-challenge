@@ -4,6 +4,47 @@
 body{
     margin: 0px;
 }
+
+.hello {
+    background: red;
+    display: flex;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 220px;
+}
+.datetime {
+width: 250px;
+height: 80px;
+background: blue;
+border-radius: 30px;
+}
+.time {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time span:not(:last-child){
+    position: relative;
+    margin: 0 6px;
+    font-weight: 600;
+    text-align: center;
+}
+.time span:last-child{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+.date {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
 header {
     display: flex;
     flex-direction: column;
