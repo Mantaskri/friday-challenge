@@ -1,0 +1,79 @@
+@import url(./layout.css);
+@import url(./desktop.css);
+
+body {
+    background-color: var(--bg-color);
+    display: flex;
+}
+
+.navi {
+    background-color: #F7F6FF;
+    display: flex;
+    flex-direction: column;
+    z-index: 1px;
+}
+.navi > .logo-box {
+    width: auto;
+    height: 100px;
+    margin-left: 18px;
+    margin-right: 10px;
+    background: url(../assets/logo.svg);
+    background-repeat: no-repeat;
+    background-position-y: 40px;
+    border-bottom: 2px solid var(--main-grey);
+}
+.navi > .nav-items {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+}
+.nav-items .button {
+    height: 60px;
+    width: auto;
+    margin-left: 32px;
+    /* padding: 18px 38px 18px 37px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s;
+}
+.bg-img {
+    background-repeat: no-repeat;
+    background-position: 16px 20px;
+}
+.bg-img.bg-img1 {
+    background-image: url(../assets/home.svg);
+}
+.bg-img.bg-img2 {
+    background-image: url(../assets/callendar.svg);
+}
+.bg-img.bg-img3 {
+    background-image: url(../assets/plugins.svg);
+}
+.bg-img.bg-img4 {
+    background-image: url(../assets/games.svg);
+}
+.nav-items .nav-link {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--main-blue);
+    display: none;
+}
+@media(min-width: 850px) {
+    .button:hover {
+        margin-left: 32px;
+        background-color: #fff;
+        border-radius: 20px 0 0 20px;
+    }
+    
+    .navi:hover {
+        transition: 1.2s;
+        width: 206px;
+    }
+    .navi:hover .nav-link {
+        display: flex;
+        opacity: 0.6;
+    }
+}

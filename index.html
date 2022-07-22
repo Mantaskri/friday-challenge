@@ -4,47 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>challenge</title>
-    <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
 <body>
-    <div class="datetime">
-        <div class="time">
-            <span id="hour">00</span>
-            <span id="minutes">00</span>
-            <span id="seconds">00</span>
-            <span id="daytime">AM</span>
+    <nav class="navi">
+        <div class="logo-box">
         </div>
-        <div class="date">
-            <span id="dayname">Day</span>
-            <span id="month">Month</span>
-            <span id="daynum">00</span>
-            <span sid="year">year</span>
+        <div class="nav-items">
+            <div class="button bg-img bg-img1">
+                <a href="#" class="nav-link">Home</a>
+            </div>
+            <div class="button bg-img bg-img2">
+                <a href="#" class="nav-link">Calendar</a>
+            </div>
+            <div class="button bg-img bg-img3">
+                <a href="#" class="nav-link">FE</a>
+            </div>
+            <div class="button bg-img bg-img4">
+                <a href="#" class="nav-link">Games</a>
+            </div>
         </div>
+    </nav>
+    <div class="content">
+        <div class="row">
+            <div class="col-10 col-md-3 ml-1 welcome">
+                <h2>Good morning, [Jūsų vardas]</h2>
+            </div>
+            <div class="col-10 col-md-3 ml-1 calendar">
+                <div>
+                    <div id ="clock" onload="currentTime()" class="time"></div>
+                    <p class="date">Penktadienis, Liepos 22, 2022</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <img src="./assets/workplace-results-professional-report-accounting-during 1.png" alt="img">
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-8 quote-place">
+                <p class="quote">“First, solve the problem. Then, write the code.” - John Johnson</p>
+            </div>
+        </div>
+        <footer>
+            <div class="row">
+                <div class="col-4 col-lg-4 ml-4 footer">
+                    <p>© Baltic Institute of Technology</p>
+                </div>
+            </div>
+        </footer>
     </div>
-
-    <h1 class="hello">Good morning,<br> Mr. Smith</h1>
-    <header class="header">
-        <img  class="logo"src="./assets/logo.svg" alt="logo">
-        <hr>
-        <nav class="navi">
-            <div class="main-icon home">
-        <a class="icons" href="#"><img src="./assets/home.svg" alt="home"></a>
-            <a class="icon-link" href="#" >Home</a>
-    </div>
-        <div class="main-icon calendar">
-        <a class="icons" href="#"><img src="./assets/callendar.svg" alt="callendar"></a>
-            <a class="icon-link" href="#" >Calendar</a>
-    </div>
-        <div class="main-icon FE">
-        <a class="icons" href="#"><img src="./assets/plugins.svg" alt="plugins"></a>
-            <a class="icon-link" href="#" >FE</a>        
-    </div>
-        <div class="main-icon games">
-        <a class="icons" href="#"><img src="./assets/games.svg" alt="games"></a>
-            <a class="icon-link" href="#" >Games</a>        
-    </div>    
-        </nav>
-<script src="./Js/date-time.js"></script>
+    <script src="./App.js" defer></script>
 </body>
 </html>
